@@ -58,10 +58,49 @@
     display: table-cell;
     vertical-align: middle;
     height: 100%;
-    color: #4d7cd2;
+    color: #0055a2;
     font-size: 20px;
+    font-family: Gill Sans MT;
 }
 
+.navigation a li:hover{
+    color: #1c88f4;
+}
+
+.navigation a li:active{
+    color: #f0bf4c;
+}
+
+/*.main{
+    width: 100%;
+    display: block;
+}
+.main .video .youtube{
+    
+
+}
+
+.main .impact .title{
+    width: 301px;
+    color: rgba(0,0,0,1);
+    font-family: Gill Sans MT;
+    font-weight: Regular;
+    font-size: 48px;
+    opacity: 1;
+    text-align: left;
+}
+
+.main .impact .left_main_block .left_img_title{
+    width: 470px;
+    font-size: 20px;
+    font-family: Gill Sans MT;
+    font-weight: bold;
+}
+.main .impact .left_main_block .left_img_description{
+    width: 470px;
+    font-family: Gill Sans MT;
+}
+*/
 .footer{
     width: 100vw;
     display: block;
@@ -118,6 +157,14 @@
     font-weight: 200;
     width: 100%;
     padding-bottom: 5px;
+}
+
+.inner_footer .footer_third a:hover{
+    text-decoration: underline;
+}
+
+.inner_footer .footer_third a i:hover{
+    color: #f0bf4c;
 }
 
 .inner_footer .footer_third li{
