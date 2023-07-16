@@ -71,6 +71,23 @@
     color: #f0bf4c;
 }
 
+.main input[type=button]{
+    background-color:  #1c88f4;
+    color:white;
+    border-radius: 2px;
+    height:26px;
+    width:140px;
+    border: none;
+
+}
+.main input[type=button]:hover{
+    background-color:  #14abf6;
+
+}
+.main input[type=button]:active{
+    color:  #f0bf4c;
+
+}
 /*.main{
     width: 100%;
     display: block;
