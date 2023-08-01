@@ -8,8 +8,9 @@
     <!--- Icons --->
     <!--<link rel="stylesheet" type="text/css" href="font-awesome.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>SJSU Spartan Food Pantry</title>
+    <title>Live Status</title>
 </head>
+
 <body>
     <div class="header">
         <div class="inner_header">
@@ -18,13 +19,42 @@
             </div>
             <ul class="navigation">
                 <a href="https://www.sjsu.edu/sjsucares/about/index.php"><li>About Us</li></a>
-                <a><li>Status</li></a>
+                <a href="livestatus.html"><li>Status</li></a>
                 <a href="https://www.sjsu.edu/sjsucares/about/faq.php"><li>FAQs</li></a>
                 <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVBUWS1HZmFlaDI3fGRlZmF1bHR8MWQ3YmJhNDc4MTNmYTgxMTkxM2I3OWIxYWM5YTcwM2Y"><li>Volunteer</li></a>
-                <a><li><b>Log In</b></li></a>
+                <a href="login.html"><li><b>Log In</b></li></a>
             </ul>
         </div>
     </div>
+
+    <div class="container">
+        <div class="progress_container">
+            <h4>Corn</h4>
+            <div class="progress_bar">
+                <span data-width="90%"></span>
+            </div>
+        </div>
+        <div class="progress_container">
+            <h4>Potatoes</h4>
+            <div class="progress_bar">
+                <span data-width="80%"></span>
+            </div>
+        </div>
+        <div class="progress_container">
+            <h4>Milk</h4>
+            <div class="progress_bar">
+                <span data-width="70%"></span>
+            </div>
+        </div>
+        <div class="progress_container">
+            <h4>Eggs</h4>
+            <div class="progress_bar">
+                <span data-width="60%"></span>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+
     <div class="footer">
         <div class="inner_footer">
             <div class="logo_container">
@@ -53,5 +83,7 @@
             </div>
         </div>
     </div>
+
+<script src="/js/index.js"> </script>
 </body>
 </html>
