@@ -79,19 +79,18 @@
     background-color: #F5F5F5;
 }
 .main .inner-title .title{
-    font-size: 25px;
+    font-size: 30px;
     font-family: Gill Sans MT;
     border-bottom: 1px solid rgb(0, 0, 0);
     background-color:#F5F5F5;
     
-
     width: 1000px;
     height: 100%;
     display: block;
     margin: 0 auto;
 }
 .main .produce{
-    font-size: 30px;
+    font-size: 40px;
     font-family: Gill Sans MT;
     
     width: 1000px;
@@ -124,6 +123,150 @@
     font-family: Gill Sans MT;
 }
 
+.main .row1 .column img{
+    border: 3px solid #555;
+}
+
+.main .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.main .row2 .column {
+    float: left; 
+    width: 10%;
+    padding-right:75px;
+    padding-left: 112px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    left: 240px;
+    position:relative;
+}
+
+.main .row2 .column button{
+    background-image: linear-gradient(to right, #1c88f4 , #14abf6, #79d0fc);
+    color:black;
+    border-radius: 20px;
+    height:25px;
+    width:115px;
+    border: none;
+    font-size: 17px;
+    font-family: Gill Sans MT;
+}
+.main .row2 .column button:hover{
+    color: #1ce2f4;
+}
+.main .row2 .column button:active{
+    color: #2a939c;
+}
+.main .row3{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.main .fridge{
+    font-size: 40px;
+    font-family: Gill Sans MT;
+    
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.main .row4::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.main .row4 .column {
+    float: left; 
+    width: 10%;
+    padding-right:90px;
+    padding-left: 95px;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    left: 240px;
+    position:relative;
+}
+
+.main .row4 .column figcaption{
+    font-family: Gill Sans MT;
+}
+
+.main .row4 .column img{
+    border: 3px solid #555;
+}
+.main .row5::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.main .row5 .column {
+    float: left; 
+    width: 10%;
+    padding-right:75px;
+    padding-left: 112px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    left: 240px;
+    position:relative;
+}
+
+.main .row5 .column button{
+    background-image: linear-gradient(to right, #1c88f4 , #14abf6, #79d0fc);
+    color:black;
+    border-radius: 20px;
+    height:25px;
+    width:115px;
+    border: none;
+    font-size: 17px;
+    font-family: Gill Sans MT;
+}
+.main .row5 .column button:hover{
+    color: #1ce2f4;
+}
+.main .row5 .column button:active{
+    color: #2a939c;
+}
+
+.main .row6::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.main .row6 .column {
+    float: left; 
+    width: 10%;
+    padding-right:75px;
+    padding-left: 112px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    left: 998px;
+    position:relative;
+}
+
+.main .row6 .column button{
+    background-image: linear-gradient(to right, #1c88f4 , #14abf6, #79d0fc);
+    color:black;
+    border-radius: 20px;
+    height:33px;
+    width:170px;
+    border: none;
+    font-size: 28px;
+    font-family: Gill Sans MT;
+}
+.main .row6 .column button:hover{
+    color: #1ce2f4;
+}
+.main .row6 .column button:active{
+    color: #2a939c;
+}
 .footer{
     width: 100vw;
     display: block;
