@@ -8,7 +8,7 @@
     <!--- Icons --->
     <!--<link rel="stylesheet" type="text/css" href="font-awesome.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Sign In</title>
+    <title>SFP Sign In</title>
 </head>
 
 <body>
@@ -40,34 +40,39 @@
             <form id="shopper" class="input-group">
                 <input type="text" class="input-field" placeholder="User ID" required>
                 <input type="text" class="input-field" placeholder="Password" required>
-                <button type="submit" class="submit-btn">Sign In</button>    
+                <button type="submit" class="submit-btn" onclick="openCheckoutPage()">Sign In</button>      
             </form>
 
             <form id="staff" class="input-group">
                 <input type="text" class="input-field" placeholder="User ID" required>
                 <input type="text" class="input-field" placeholder="Password" required>
-                <button type="submit" class="submit-btn">Sign In</button>    
+
+                <!-- Need to update to staff inventory page-->
+                <button type="submit" class="submit-btn" onclick="openCheckoutPage()">Sign In</button>       
             </form>
 
-            <script>
-            var x = document.getElementById("shopper");
-            var y = document.getElementById("staff");
-            var z = document.getElementById("btn");
+    <script>
+    var x = document.getElementById("shopper");
+    var y = document.getElementById("staff");
+    var z = document.getElementById("btn");
 
-            function staff(){
-                x.style.left = "-400px"
-                y.style.left = "5px"
-                z.style.left = "110px"
-            }
+    function staff(){
+        x.style.left = "-400px"
+        y.style.left = "5px"
+        z.style.left = "110px"
+    }
 
-            function shopper(){
-                x.style.left = "50px"
-                y.style.left = "450px"
-                z.style.left = "0px"
-            }
-            </script>
-        </div>
-    </div>
+    function shopper(){
+        x.style.left = "50px"
+        y.style.left = "450px"
+        z.style.left = "0px"
+    }
+
+    function openCheckoutPage(){
+    window.location.href='checkout.html'
+    }
+    </script>
+
     <!--  <div class="footer">
         <div class="inner_footer">
             <div class="logo_container">

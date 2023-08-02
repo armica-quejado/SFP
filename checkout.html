@@ -1,98 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/checkoutStyle.css"
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFP Checkout</title>
 
-    <!--- Icons --->
-    <!--<link rel="stylesheet" type="text/css" href="font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/checkoutStyle.css">
+        <!--- Icons --->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>SJSU Spartan Food Pantry</title>
 </head>
-<body>
-    <div class="header">
-        <div class="inner_header">
-            <div class="logo_container">
-                <h1>SJSU<span>CARES</span></h1>
+<body class="">
+    
+    <div class="container">
+        <header>
+            <h1>Checkout</h1>
+            <div class="shopping">
+                <img src="../images/shopping.svg">
+                <span class="quantity">0</span>
             </div>
-            <ul class="navigation">
-                <a href="https://www.sjsu.edu/sjsucares/about/index.php"><li>About Us</li></a>
-                <a><li>Status</li></a>
-                <a href="https://www.sjsu.edu/sjsucares/about/faq.php"><li>FAQs</li></a>
-                <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVBUWS1HZmFlaDI3fGRlZmF1bHR8MWQ3YmJhNDc4MTNmYTgxMTkxM2I3OWIxYWM5YTcwM2Y"><li>Volunteer</li></a>
-                <a><li><b>Log In</b></li></a>
-            </ul>
+        </header>
+
+        <div class="list">
         </div>
     </div>
-    <div class="main">
-        <div class = "inner-title">
-            <span class="title">Checkout</span>
-        </div>
 
-        <span class="produce">Produce</span>
-
-        <div class="row1">
-            <div class="column">
-              <img src="C:\Users\aggar\Documents\GIT\CMPE195FPROJECT\SFP\images\apple.png" alt="Apple" style="width:100%">
-              <figcaption>Apples</figcaption>
-            </div>
-            <div class="column">
-              <img src="C:\Users\aggar\Documents\GIT\CMPE195FPROJECT\SFP\images\banana.png" alt="Banana" style="width:100%">
-              <figcaption>Bananas</figcaption>
-            </div>
-            <div class="column">
-              <img src="C:\Users\aggar\Documents\GIT\CMPE195FPROJECT\SFP\images\carrots.png" alt="Carrot" style="width:100%">
-              <figcaption>Carrots</figcaption>
-            </div>
-        </div>
-
-        <div class = "row2">
-            <div class="column">
-                <button>+ Add to Cart</button>
-            </div>
-            <div class="column">
-                <button>+ Add to Cart</button>
-            </div>
-            <div class="column">
-                <button>+ Add to Cart</button>
-            </div>    
-        </div>
-
-        <div class = "row3">
-             <!--empty since it just has the underline-->
-        </div>
-
-        <span class="fridge">Fridge Items</span>
-
-        <div class = "row4">
-            <div class="column">
-              <img src="C:\Users\aggar\Documents\GIT\CMPE195FPROJECT\SFP\images\milk.png" alt="Milk" style="width:100%">
-              <figcaption>Milk</figcaption>
-            </div>
-            <div class="column">
-            </div>
-            <div class="column">
-            </div>
-        </div>
-
-        <div class = "row5">
-            <div class="column">
-                <button>+ Add to Cart</button>
-            </div>
-            <div class="column">
-            </div>
-            <div class="column">
-            </div>    
-        </div>
-
-        <div class = "row6">
-            <div class="column">
-                <button><i class="fa fa-shopping-cart"></i>Checkout</button>
-            </div>
+    <div class="card">
+        <h1><b>Checkout Page</b></h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total" onclick="openPopup()">Confirm Items</div>
+            <div class="closeShopping">Close</div>
         </div>
     </div>
+
+    <div class="popup" id="popup">
+        <i class="fa-solid fa-square-check icon" style="color: #1c88f4;"></i>
+        <h2>You're all set!</h2>
+        <p> Thank you. We look forward to serving you again soon! Have a great day! </p>
+
+        <button type="button" onclick="closePopup(); openLoginPage()">OK</button>
+
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup")
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup")
+        }
+
+        function openLoginPage(){
+            window.location.href='login.html'
+        }
+    </script>
+
+    <script src="../js/checkout.js"></script>
+
     <div class="footer">
         <div class="inner_footer">
             <div class="logo_container">
