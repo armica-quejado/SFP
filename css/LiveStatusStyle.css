@@ -70,6 +70,99 @@
 .navigation a li:active{
     color: #f0bf4c;
 }
+.main{
+    background-color:#E7F3F4;
+}
+
+.main .inner-title{
+    background-color: #F5F5F5;
+}
+.main .inner-title .title{
+    font-size: 30px;
+    font-family: Gill Sans MT;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color:#F5F5F5;
+    
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.main .progress_container{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto   
+}
+.main .progress_container span{
+    font-size: 23px;
+    font-family: Gill Sans MT;
+
+    width: 1000px;
+    height: 100%;
+    display: block;
+}
+.main .progress_container .progress_bar{
+    background-color: rgb(213, 208, 208);
+    height: 20px;
+    width: 100%;
+    border-radius: 15px;
+}
+.main .progress_container .progress_bar .apple{
+    background-image: linear-gradient(to right, #1c88f4 , #26A6E2, #1BD7E3);
+    height: 20px;
+    width: 80%;
+    border-radius: 15px;
+
+    color: white;
+    font-family: Gill Sans MT;
+    text-align: right;
+    font-size: 17px;
+    border-radius: 15px;
+}
+
+.main .progress_container .progress_bar .bananas{
+    background-image: linear-gradient(to right, #1c88f4 , #26A6E2, #1BD7E3);
+    height: 20px;
+    width: 100%;
+    border-radius: 15px;
+
+    color: white;
+    font-family: Gill Sans MT;
+    text-align: right;
+    font-size: 17px;
+    border-radius: 15px;
+}
+
+.main .progress_container .progress_bar .carrots{
+    background-image: linear-gradient(to right, #1c88f4 , #26A6E2, #1BD7E3);
+    height: 20px;
+    width: 30%;
+    border-radius: 15px;
+
+    color: white;
+    font-family: Gill Sans MT;
+    text-align: right;
+    font-size: 17px;
+    border-radius: 15px;
+}
+
+.main .progress_container .progress_bar .milk{
+    background-image: linear-gradient(to right, #1c88f4 , #26A6E2, #1BD7E3);
+    height: 20px;
+    width: 50%;
+    border-radius: 15px;
+
+    color: white;
+    font-family: Gill Sans MT;
+    text-align: right;
+    font-size: 17px;
+    border-radius: 15px;
+}
+
 .footer{
     width: 100vw;
     display: block;
