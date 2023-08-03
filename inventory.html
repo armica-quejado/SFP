@@ -10,29 +10,26 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Iventory</title>
     </head>
-
     <body>
-        <form method="Post">
+        <form action="" id="inventoryForm">
             <label>
-                <p>Number of Apples in the Inventory:</p>
-                <input type="number" name="apples">
+                <p>Number of Apples:</p>
+                <input type="number" id="apples" required>
             </label>
-            <button type="submit">Submit</button> 
             <label>
-                <p>Number of Bananas in the Inventory:</p>
-                <input type="number" name="apples">
+                <p>Number of Bananas:</p>
+                <input type="number" id="bananas" required>
             </label>
-            <button type="submit">Submit</button> 
             <label>
-                <p>Number of Carrots in the Inventory:</p>
-                <input type="number" name="apples">
+                <p>Number of Carrots:</p>
+                <input type="number" id = "carrots" required>
             </label>
-            <button type="submit">Submit</button>
             <label>
-                <p>Number of Milk cartons in the Inventory:</p>
-                <input type="number" name="apples">
+                <p>Number of Milk cartons:</p>
+                <input type="number" id = "milk" required>
             </label>
-            <button type="submit">Submit</button> 
+            <button type="submit">Submit All</button> 
         </form>
+        <script src="inventory.js"></script>
     </body>
 </html>
