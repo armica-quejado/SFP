@@ -1,0 +1,36 @@
+* {
+    font-family: sans-serif;
+}
+body{
+    background: url("../images/outsideSFP.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    height: 50vh;
+}
+#form{
+    background-color: rgb(237, 237, 237);
+    width:25%;
+    border-radius: 4px;
+    margin:120px auto;
+    padding:50px;
+    box-shadow: 5.3px 10.6px 10.6px hsl(0deg 0% 0% / 0.34);
+}
+
+#btn{
+    width: 40%;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    background: linear-gradient(to right, #1c88f4, #5edefd);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 570px) {
+    #form {
+      width: 65%;
+      margin-left:none;
+      padding:40px;
+    }
+  }
